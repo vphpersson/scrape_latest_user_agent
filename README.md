@@ -18,6 +18,7 @@ positional arguments:
 optional arguments:
   -h, --help            show this help message and exit
   --operating-system {windows,mac_os,linux}
+                        The operating system for which to obtain the latest user agent.
 
 The user agent is scraped from whatismybrowser.com.
 ```
