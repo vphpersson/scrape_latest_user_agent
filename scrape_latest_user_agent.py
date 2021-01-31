@@ -31,7 +31,7 @@ class ScrapeLatestUserAgentArgumentParser(TypedArgumentParser):
 
         self.add_argument(
             '--operating-system',
-            help='',
+            help='The operating system for which to obtain the latest user agent.',
             choices=[operating_system.value for operating_system in list(OperatingSystem)],
             default='windows'
         )
