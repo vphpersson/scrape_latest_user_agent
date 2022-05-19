@@ -22,7 +22,6 @@ class OperatingSystem(Enum):
 
 
 class _WhatIsMyBrowserHTMLParser(HTMLParser):
-
     H2_OPERATING_SYSTEM_PATTERN: Pattern = re_compile(pattern=r'^Latest .+ on (?P<operating_system>.+) User Agents$')
 
     def __init__(self, *args, **kwargs):
@@ -69,7 +68,7 @@ async def scrape_latest_user_agent(
     """
     Obtain the latest user agent for a specified browser and operating system.
 
-    The user agent is scraped from whatismybrowser.com
+    The user agent is scraped from whatismybrowser.com.
 
     :param browser: The browser of the user agent to obtain.
     :param operating_system: The operating system of the user agent to obtain.
@@ -88,7 +87,7 @@ async def scrape_latest_user_agent(
 
     if browser is Browser.CHROME:
         if operating_system is OperatingSystem.WINDOWS:
-            label = 'Windows'
+            label = 'Windows 10'
         elif operating_system is OperatingSystem.MAC_OS:
             label = 'macOS'
         elif operating_system is OperatingSystem.LINUX:
