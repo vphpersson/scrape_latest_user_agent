@@ -6,6 +6,6 @@ setup(
     packages=find_packages(),
     install_requires=[
         'httpx',
-        'pyutils @ git+ssh://git@github.com/vphpersson/pyutils.git#egg=pyutils'
+        'typed_argument_parser @ git+https://github.com/vphpersson/typed_argument_parser.git#egg=typed_argument_parser'
     ]
 )
